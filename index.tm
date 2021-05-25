@@ -41,6 +41,10 @@
   <\itemize-dot>
     <item><hlink|<strong|Stocker\<#7684\>\<#8C2C\>\<#8BEF\>>|2021-03-31-0.html>
   </itemize-dot>
+
+  <\equation*>
+    <with|math-display|true|e<rsup|\<pi\>i>+1=0>
+  </equation*>
 </body>
 
 <\initial>
