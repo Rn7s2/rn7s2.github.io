@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Blog of rn7s2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
+  </head>
+  <h1>The Blog of rn7s2</h1>
+  <h1>Sum (I)</h1>
+  <br>
+  <p>
+    This time we discuss the problem that how \[\sum_{k=1}^n{k^\alpha}(\alpha\in N^{*})\] is reduced to a simple \(\alpha+1\) degree polynomial.
+  </p>
+  <p>
+    First, when \(\alpha=1\) aka 'Gauss Summation Method', pairing and adding.
+  </p>
+  <p>
+    However, there is another way. As \[\sum_{k=1}^n{[k^2-(k-1)^2]}=n^2\]and\[k^2-(k-1)^2=2k-1\]then\[\sum_{k=1}^n{[k^2-(k-1)^2]}=n^2=\sum_{k=1}^n{(2k-1)}=2\sum_{k=1}^n{k}-n\] so that \[\sum_{k=1}^n{k}=\frac{n(n+1)}{2}\]
+  </p>
+  <p>
+    From the discussion above, we are able to get a generic solution: adding up \(k^\alpha-(k-1)^\alpha\).
+  </p>
+  <p>
+    For example, when \(\alpha=3\)\[k^4 - (k-1)^4=4k^3-6k^2+4k-1\]\[n^4=3\sum_{k=1}^n{k^3}-6\sum_{k=1}^n{k^2}+4\sum_{k=1}^n{k}-n\]We already knows the result of \(\displaystyle \sum_{k=1}^n{k}\) and \(\displaystyle \sum_{k=1}^n{k^2}\), so that\[\sum_{k=1}^n{k^3}=\frac{n^2(n+1)^2}{4}\]
+  </p>
+</html>
